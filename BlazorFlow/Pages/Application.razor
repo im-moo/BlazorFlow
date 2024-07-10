@@ -36,7 +36,7 @@ else
                     @foreach (var answer in existingAnswers)
                     {
                         <label class="radio-answer">
-                            <InputRadio name="radio" SelectedValue="answer.FlowAnswerValue" @bind-Value="PageModel.StringValue"></InputRadio>
+                            <BlazorFlow.Shared.Components.InputRadio name="radio" SelectedValue="answer.FlowAnswerValue" @bind-Value="PageModel.StringValue"></BlazorFlow.Shared.Components.InputRadio>
                             @answer.FlowAnswerTextEn
                         </label>
                     }
